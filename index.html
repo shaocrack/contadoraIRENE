@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Día del Contador, Irene!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="assets/irene.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="container">
+        <!-- Pantalla de Bienvenida -->
+        <section id="welcome-screen" class="screen active">
+            <div class="message-box">
+                <h1>¡Feliz Día del Contador, Irene!</h1>
+                <p>Hoy es tu día especial, ¡prepárate para una sorpresa contable!</p>
+                <button id="start-btn" class="btn">Comenzar</button>
+            </div>
+        </section>
+
+        <!-- Juego de Cálculos -->
+        <section id="math-game" class="screen">
+            <div class="message-box">
+                <h2>¿Lista para un desafío contable?</h2>
+                <p>Resuelve este sencillo cálculo:</p>
+                <div class="calculator">
+                    <div class="calculator-display" id="calcDisplay">0</div>
+                    <div class="calculator-buttons">
+                        <button class="calc-btn">7</button>
+                        <button class="calc-btn">8</button>
+                        <button class="calc-btn">9</button>
+                        <button class="calc-btn operator">/</button>
+                        <button class="calc-btn">4</button>
+                        <button class="calc-btn">5</button>
+                        <button class="calc-btn">6</button>
+                        <button class="calc-btn operator">*</button>
+                        <button class="calc-btn">1</button>
+                        <button class="calc-btn">2</button>
+                        <button class="calc-btn">3</button>
+                        <button class="calc-btn operator">-</button>
+                        <button class="calc-btn">0</button>
+                        <button class="calc-btn">.</button>
+                        <button class="calc-btn equal">=</button>
+                        <button class="calc-btn operator">+</button>
+                        <button class="calc-btn clear">C</button>
+                    </div>
+                </div>
+                <div id="math-message" class="math-message"></div>
+                <button id="next-fact" class="btn" style="display: none;">Continuar</button>
+            </div>
+        </section>
+
+        <!-- Datos Curiosos -->
+        <section id="fun-facts" class="screen">
+            <div class="message-box">
+                <h2>Datos Curiosos Contables</h2>
+                <div class="facts-container">
+                    <div class="fact-card">
+                        <h3>¿Sabías que...?</h3>
+                        <p>El primer contador de la historia fue Luca Pacioli en 1494, pero el primer error contable lo cometió Adán cuando le pasó la culpa a Eva.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Frase del día</h3>
+                        <p>"La contabilidad es el lenguaje de los negocios... y a veces ese lenguaje incluye gritos en el cuadre del dia."</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Chiste Contable</h3>
+                        <p>¿Qué le dice un activo a un pasivo? "Tranquilo, que entre los dos hacemos un buen balance."</p>
+                    </div>
+                </div>
+                <button id="final-message-btn" class="btn">Siguiente</button>
+            </div>
+        </section>
+
+        <!-- Mensaje Final -->
+        <section id="final-message" class="screen">
+            <div class="message-box">
+                <h2>¡Feliz Día, Irene!</h2>
+                <div class="message-content">
+                    <p>Porque eres la mejor en lo que haces, la que hace cuadrar hasta los números más rebeldes, la reina de los balances y la maga del lavado :V jajaj ...</p>
+                    <div class="special-message">
+                        <p>¡Gracias por hacer que los números canten y por encontrar el equilibrio perfecto en todo lo que haces!</p>
+                        <p class="highlight">¡Que tengas un día lleno de asientos perfectamente cuadrados, libros balanceados y café ilimitado!</p>
+                    </div>
+                    <div class="signature">
+                        <p>Con cariño,</p>
+                        <p>tu amigo  shao :) el mejor programador del ECUADOR xD jajaj </p>
+                    </div>
+                </div>
+                <div class="confetti"></div>
+                <button id="restart-btn" class="btn">Volver al inicio</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
